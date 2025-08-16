@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css"><meta charset="utf-8"><title>Projects - Amit D. Rana</title></head>
+<body>
+
+
+<nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="links">
+    <a href="index.html">Home</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="projects.html">Projects</a> |
+    <a href="education.html">Education</a> |
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<h1>Highlighted Projects</h1>
+
+<h2>1. EC2 Auto Start/Stop with Lambda</h2>
+<p><strong>Problem:</strong> EC2 instances were running 24/7, increasing costs.<br>
+<strong>Solution:</strong> Implemented AWS Lambda with CloudWatch Events to start/stop instances on schedule.<br>
+<strong>Outcome:</strong> Reduced costs by ~40%.</p>
+
+<h2>2. Real-time Monitoring with Grafana, Prometheus & Loki</h2>
+<p><strong>Problem:</strong> Lack of centralized monitoring and alerting.<br>
+<strong>Solution:</strong> Built dashboards using Grafana, Prometheus, Loki, Promtail, Blackbox Exporter, and Node Exporter.<br>
+<strong>Outcome:</strong> Improved observability, reduced downtime.</p>
+
+<h2>3. Automated Static Website Deployment</h2>
+<p><strong>Problem:</strong> Manual deployment process for websites.<br>
+<strong>Solution:</strong> Automated using AWS S3, CloudFormation, and CI/CD workflows.<br>
+<strong>Outcome:</strong> Faster and reliable deployments.</p>
+
+<h2>4. High-Security Infrastructure Migration</h2>
+<p><strong>Problem:</strong> Needed migration with strict security compliance.<br>
+<strong>Solution:</strong> Migrated firewalls, web servers, and databases with hardened security.<br>
+<strong>Outcome:</strong> Zero security breaches, smooth transition.</p>
+
+<h2>5. AWS Architectures with Subnets, VPN, Load Balancers, RDS</h2>
+<p><strong>Problem:</strong> Required scalable, hybrid architecture.<br>
+<strong>Solution:</strong> Designed VPC with private/public subnets, VPN connectivity, load balancers, and RDS (MySQL, MongoDB via OpenVPN).<br>
+<strong>Outcome:</strong> Secure and scalable infrastructure.</p>
+
+<h2>6. ECS Fargate & CI/CD Pipelines</h2>
+<p><strong>Problem:</strong> Need for containerized, auto-scalable deployments.<br>
+<strong>Solution:</strong> Built infra on AWS ECS Fargate integrated with CodePipeline CI/CD.<br>
+<strong>Outcome:</strong> Increased deployment speed, reduced manual intervention.</p>
+
+<footer>
+  © 2025 Amit D. Rana — All Rights Reserved
+</footer>
+
+
+<script>
+function toggleMenu() {
+  const links = document.querySelector('nav .links');
+  if (links.style.display === 'block') {
+    links.style.display = 'none';
+  } else {
+    links.style.display = 'block';
+  }
+}
+</script>
+
+</body>
+</html>

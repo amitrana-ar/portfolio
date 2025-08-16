@@ -1,285 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
   <title>Amit D. Rana – DevOps / System Administrator</title>
-  <meta name="description" content="Resume website for Amit D. Rana – DevOps & System Administrator specializing in AWS, CI/CD, Docker, Linux and network security." />
-  <meta name="theme-color" content="#0f172a" />
-  <meta property="og:title" content="Amit D. Rana – DevOps / System Administrator" />
-  <meta property="og:description" content="AWS • CI/CD • Docker • Linux • Grafana • Prometheus • Firewalls" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./assets/profile.jpg" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3EAR%3C/text%3E%3C/svg%3E" />
-  <style>
-    :root{--bg:#0b1020;--panel:#101936;--muted:#475569;--text:#e5e7eb;--brand:#60a5fa;--chip:#1e293b;--accent:#22d3ee;--good:#22c55e}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:linear-gradient(180deg,#0b1020 0%,#0b1020 30%,#0e1530 100%);color:var(--text)}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1000px;margin:0 auto;padding:24px}
-    header{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;margin-top:8px}
-    .avatar{width:96px;height:96px;border-radius:50%;background:#0a0a0a url('./assets/profile.jpg') center/cover no-repeat;border:2px solid #1f2937;box-shadow:0 8px 24px rgba(0,0,0,.4)}
-    .title h1{font-size:2rem;margin:0}
-    .subtitle{color:#cbd5e1;margin-top:6px}
-    .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .badge{background:var(--chip);color:#cbd5e1;padding:6px 10px;border-radius:999px;font-size:.85rem;border:1px solid #223046}
-    .toolbar{display:flex;gap:10px;margin-top:14px}
-    .btn{background:#111827;border:1px solid #223046;color:#e2e8f0;padding:8px 12px;border-radius:10px;cursor:pointer}
-    .btn:hover{border-color:#334155}
-    .grid{display:grid;grid-template-columns:2fr 1fr;gap:22px;margin-top:22px}
-    section.card{background:radial-gradient(1200px 500px at -20% -20%,rgba(96,165,250,.08),transparent 60%),linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid #1f2a44;border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-    h2{font-size:1.2rem;margin:0 0 10px}
-    .item{padding:14px;border-left:3px solid #1f2a44;margin-left:6px}
-    .item+.item{margin-top:10px}
-    .meta{font-size:.9rem;color:#a7b0bf}
-    ul.clean{padding-left:18px;margin:8px 0}
-    li{margin:6px 0}
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:#0b1020;border:1px solid #28344f;color:#cbd5e1;padding:6px 10px;border-radius:8px;font-size:.85rem}
-    details{border:1px dashed #27334e;border-radius:10px;padding:10px;margin-top:8px}
-    summary{cursor:pointer;color:#cbd5e1}
-    footer{margin:30px 0;color:#94a3b8;font-size:.9rem;text-align:center}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    @media print{header .toolbar,nav,.avatar,details,footer{display:none}body{background:#fff;color:#111}section.card{border:1px solid #ddd;box-shadow:none}a{color:#000;text-decoration:underline}}
-  </style>
-  <script>
-    function downloadPDF(){
-      // Replace the URL below with the hosted PDF of your CV if you upload one.
-      const pdfUrl = './AR-Devops-CV.pdf';
-      window.open(pdfUrl, '_blank');
-    }
-    function copyEmail(){navigator.clipboard.writeText('rana.amit230298@gmail.com');const e=document.getElementById('copyToast');e.hidden=false;setTimeout(()=>e.hidden=true,1500)}
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Amit D. Rana",
-    "jobTitle": "System Administrator / DevOps Engineer",
-    "email": "mailto:rana.amit230298@gmail.com",
-    "telephone": "+919265014709",
-    "url": "https://example.com/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1502, Kokadiya Ni Pole, Sarangpur Chakla",
-      "addressLocality": "Ahmedabad",
-      "postalCode": "380001",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/amit-rana-544814156"
-    ],
-    "knowsAbout": ["AWS","EC2","VPC","RDS","S3","CloudFormation","Route 53","Docker","Jenkins","GitLab","GitHub","Apache","Nginx","Linux","Grafana","Prometheus","Loki","Blackbox Exporter","Sophos Firewall","SonicWall"]
-  }
-  </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="avatar" aria-hidden="true"></div>
-      <div class="title">
-        <h1>Amit D. Rana</h1>
-        <div class="subtitle">System Administrator / DevOps – Ahmedabad, India</div>
-        <div class="badges">
-          <span class="badge">AWS & Cloud Infra</span>
-          <span class="badge">CI/CD – Jenkins & GitLab</span>
-          <span class="badge">Docker & ECS</span>
-          <span class="badge">Linux • Apache • Nginx</span>
-          <span class="badge">Grafana • Prometheus</span>
-          <span class="badge">Firewalls & Security</span>
-        </div>
-        <div class="toolbar" role="group" aria-label="quick actions">
-          <button class="btn" onclick="copyEmail()">Copy Email</button>
-          <a class="btn" href="tel:+919265014709">Call</a>
-          <a class="btn" href="mailto:rana.amit230298@gmail.com">Email</a>
-          <a class="btn" href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" rel="noopener">LinkedIn</a>
-          <button class="btn" onclick="downloadPDF()">Download PDF</button>
-        </div>
-        <div id="copyToast" hidden aria-live="polite" style="margin-top:8px;font-size:.9rem;color:var(--good)">Email copied ✓</div>
-      </div>
-    </header>
 
-    <div class="grid">
-      <!-- Left Column -->
-      <main>
-        <section class="card" aria-labelledby="summary-title">
-          <h2 id="summary-title">Professional Summary</h2>
-          <p>Dedicated and skilled System Administrator with a strong background in cloud infrastructure, DevOps practices, and IT operations. Seeking a DevOps Engineer role to leverage experience in automation, AWS cloud services, and system administration to drive operational efficiency and reliability.</p>
-        </section>
 
-        <section class="card" aria-labelledby="experience-title">
-          <h2 id="experience-title">Experience</h2>
-
-          <div class="item">
-            <div><strong>System Administrator</strong> – Siliconithub Pvt. Ltd.</div>
-            <div class="meta">Ahmedabad • May 2024 – Present</div>
-            <ul class="clean">
-              <li>Designed and managed scalable AWS infrastructure: EC2, VPC, RDS, S3, Load Balancers, Auto Scaling Groups, ECS, CloudWatch, SQS/SNS, Route 53, CodePipeline, CloudFormation.</li>
-              <li>Implemented CI/CD with Jenkins and GitLab; automated testing & deployments.</li>
-              <li>Containerized applications with Docker and managed microservice deployments.</li>
-              <li>Deployed, secured, and monitored web apps on Linux using Apache and Nginx.</li>
-              <li>Managed network security with Sophos Firewall & Central Endpoint Protection.</li>
-              <li>Administered multi-domain email & DNS (Hostinger, Bluehost, GoDaddy).</li>
-              <li>Provided cross‑platform support across AWS, Docker, Git, SSH, Linux, macOS, Windows.</li>
-              <li>Supported clients: Windows Server, IIS, backups, hardware upgrades, SonicWall.</li>
-              <li>Maintained IT asset inventory; delivered end‑to‑end user support.</li>
-            </ul>
-            <div style="margin-top:8px"><em>Key Achievements</em></div>
-            <ul class="clean">
-              <li>Real‑time monitoring with Grafana, Prometheus, Loki, Promtail, Blackbox, Node Exporter.</li>
-              <li>Automated static site deployments via S3 + CloudFormation + CI/CD.</li>
-              <li>Executed high‑security infra migrations (firewall, web servers, databases).</li>
-              <li>Built AWS architectures with private/public subnets, VPN, Load Balancers, RDS.</li>
-              <li>Built AWS Cloud infra with ECS Fargate and CodePipeline CI/CD.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div><strong>System Administrator</strong> – Capermint Technologies Pvt. Ltd.</div>
-            <div class="meta">Ahmedabad • Oct 2022 – May 2024</div>
-            <ul class="clean">
-              <li>Provisioned and managed AWS resources (EC2, VPC, IAM, CodeCommit).</li>
-              <li>Automated deployments using Jenkins and GitHub; Docker containerization.</li>
-              <li>Managed deployments on Apache and Nginx.</li>
-              <li>Administered domain/DNS and hosting (A2 Hosting, MilesWeb, GoDaddy).</li>
-              <li>Configured/monitored WordPress, Laravel, Node.js, PHP projects.</li>
-              <li>Oversaw Sophos Firewall configurations.</li>
-              <li>Provided technical support for devices and OS installs (Linux, macOS, Windows).</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div><strong>System Administrator</strong> – Ace Infoway Pvt. Ltd.</div>
-            <div class="meta">Ahmedabad • Dec 2020 – Sep 2023</div>
-            <ul class="clean">
-              <li>Managed internal mail server, NAS, and OS‑ticket support system.</li>
-              <li>Performed daily backups and Dropbox sync.</li>
-              <li>Maintained hardware/software inventory and user accounts.</li>
-              <li>Remote and on‑site troubleshooting across platforms.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div><strong>Retainer Engineer</strong> – Gujarat Cancer & Research Institute (Aforeserve.com Ltd.)</div>
-            <div class="meta">Ahmedabad • Jun 2020 – Dec 2020</div>
-            <ul class="clean">
-              <li>Managed Active Directory, DHCP, and remote user support.</li>
-              <li>Configured desktops, laptops, printers, and network infra.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div><strong>System Engineer</strong> – Areco Consulting & Engineering (India) Pvt. Ltd.</div>
-            <div class="meta">Ahmedabad • Aug 2018 – Jun 2020</div>
-            <ul class="clean">
-              <li>Maintained IT infrastructure, backups, and troubleshooting.</li>
-              <li>Created and launched company website (<a href="http://www.areco.in/" target="_blank" rel="noopener">areco.in</a>).</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="card" aria-labelledby="skills-title">
-          <h2 id="skills-title">Skills</h2>
-          <div class="chips">
-            <span class="chip">AWS (EC2, VPC, RDS, S3, CloudFormation, Route 53)</span>
-            <span class="chip">Azure VMs</span>
-            <span class="chip">Office 365</span>
-            <span class="chip">Jenkins • Git • GitHub • GitLab</span>
-            <span class="chip">Docker • ECS</span>
-            <span class="chip">CI/CD pipelines</span>
-            <span class="chip">Apache • Nginx • IIS • SSL</span>
-            <span class="chip">Grafana • Prometheus • Loki • Blackbox</span>
-            <span class="chip">Sophos • SonicWall • Kerio • VPN</span>
-            <span class="chip">Linux • Windows • macOS</span>
-            <span class="chip">DNS • FTP • NAS • AD • DHCP</span>
-            <span class="chip">Remote Support (AnyDesk, TeamViewer, VNC)</span>
-          </div>
-        </section>
-
-        <section class="card" aria-labelledby="education-title">
-          <h2 id="education-title">Education</h2>
-          <div class="item">
-            <div><strong>Bachelor of Computer Application (BCA)</strong> – Navgujarat College of Computer Application, Gujarat University</div>
-            <div class="meta">Graduated Apr 2018</div>
-          </div>
-          <div class="item">
-            <div><strong>H.S.C.</strong> – Shri J. C. Shah Prakash High School, Gujarat Board</div>
-            <div class="meta">Result: 60%</div>
-          </div>
-          <div class="item">
-            <div><strong>S.S.C.</strong> – Shri J. C. Shah Prakash High School, Gujarat Board</div>
-            <div class="meta">Result: 64%</div>
-          </div>
-        </section>
-
-        <section class="card" aria-labelledby="certs-title">
-          <h2 id="certs-title">Certifications</h2>
-          <ul class="clean">
-            <li>Microsoft Certified: Azure Fundamentals (AZ‑900)</li>
-            <li>AWS Solution Architecture (Udemy)</li>
-          </ul>
-        </section>
-      </main>
-
-      <!-- Right Column -->
-      <aside aria-label="sidebar">
-        <section class="card">
-          <h2>Contact</h2>
-          <ul class="clean">
-            <li><strong>Email:</strong> <a href="mailto:rana.amit230298@gmail.com">rana.amit230298@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+919265014709">+91 92650 14709</a></li>
-            <li><strong>Location:</strong> Ahmedabad, India</li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" rel="noopener">/in/amit-rana-544814156</a></li>
-          </ul>
-        </section>
-
-        <section class="card">
-          <h2>Highlights</h2>
-          <ul class="clean">
-            <li>Automated static site deployments to AWS S3</li>
-            <li>Built ECS Fargate infra with CI/CD</li>
-            <li>Designed monitoring with Grafana + Prometheus</li>
-            <li>Hardened networks with Sophos/SonicWall</li>
-          </ul>
-        </section>
-
-        <section class="card">
-          <h2>Personal Details (Optional)</h2>
-          <details>
-            <summary>Show personal details</summary>
-            <ul class="clean" style="margin-top:8px">
-              <li><strong>DOB:</strong> 02‑March‑1998</li>
-              <li><strong>Gender:</strong> Male</li>
-              <li><strong>Marital Status:</strong> Married</li>
-              <li><strong>Nationality:</strong> Indian</li>
-              <li><strong>Languages:</strong> Hindi, English, Gujarati</li>
-              <li><strong>Address:</strong> 1502, Kokadiya Ni Pole, Sarangpur Chakla, Ahmedabad – 380001</li>
-            </ul>
-          </details>
-          <p style="margin-top:10px;color:#9aa6b5;font-size:.9rem">Tip: You can hide this section before publishing if you prefer.</p>
-        </section>
-
-        <section class="card">
-          <h2>Links</h2>
-          <ul class="clean">
-            <li><a href="./AR-Devops-CV.pdf" target="_blank" rel="noopener">Download full CV (PDF)</a></li>
-            <li><a href="http://www.areco.in/" target="_blank" rel="noopener">Areco.in (past site)</a></li>
-          </ul>
-        </section>
-      </aside>
-    </div>
-
-    <footer>
-      <div>© <span id="year"></span> Amit D. Rana • Last updated <span id="updated"></span></div>
-    </footer>
+<nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="links">
+    <a href="index.html">Home</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="projects.html">Projects</a> |
+    <a href="education.html">Education</a> |
+    <a href="contact.html">Contact</a>
   </div>
+</nav>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const d = new Date();
-    document.getElementById('updated').textContent = d.toLocaleDateString(undefined,{year:'numeric',month:'short'});
-  </script>
+
+<h1>Amit D. Rana</h1>
+<h2>Professional Summary</h2>
+<p>I am a System Administrator & DevOps Engineer with 5+ years of experience managing IT infrastructure, cloud platforms, and enterprise systems. Over the years, I have built a strong foundation in AWS services, automation, containerization, CI/CD pipelines, monitoring solutions, and network security.</p>
+
+<p>My career has been shaped by handling end-to-end infrastructure responsibilities— from provisioning servers and configuring firewalls to setting up cloud-native deployments with Docker, Jenkins, and AWS ECS. I thrive on problem-solving, reducing downtime, and implementing automation that saves time and boosts productivity.</p>
+
+<h2>Career Objective</h2>
+<p>My objective is to leverage my expertise in DevOps practices, cloud infrastructure, and security to design scalable and resilient systems. I aim to contribute to organizations by:</p>
+<ul>
+  <li>Driving automation in deployment and monitoring</li>
+  <li>Designing secure, cost-efficient AWS architectures</li>
+  <li>Building reliable CI/CD pipelines for faster, error-free releases</li>
+  <li>Supporting teams with technical guidance, troubleshooting, and process optimization</li>
+</ul>
+
+<p>Ultimately, I want to grow into a DevOps Lead / Cloud Architect role, where I can mentor teams, build large-scale cloud solutions, and help businesses achieve high availability, security, and performance in their IT operations.</p>
+
+<p><a href="AR-Devops-CV.pdf" download>Download Full CV (PDF)</a></p>
+
+<footer>
+  © 2025 Amit D. Rana — All Rights Reserved
+</footer>
+
+
+<script>
+function toggleMenu() {
+  const links = document.querySelector('nav .links');
+  if (links.style.display === 'block') {
+    links.style.display = 'none';
+  } else {
+    links.style.display = 'block';
+  }
+}
+</script>
+
 </body>
 </html>
