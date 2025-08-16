@@ -1,0 +1,3 @@
+function toggleMenu(){const m=document.getElementById('menu');m.style.display=(m.style.display==='block'?'none':'block');}
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('reveal');}})},{threshold:.1});
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.card,.tl,.item').forEach(el=>observer.observe(el));});

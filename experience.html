@@ -1,56 +1,82 @@
-<!doctype html>
-<html lang="en">
-<head>
-<link rel="stylesheet" href="style.css"><meta charset="utf-8"><title>Experience - Amit D. Rana</title></head>
-<body>
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amit D. Rana – Portfolio CV</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head><body>
 
 
-<nav>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <div class="links">
-    <a href="index.html">Home</a> |
-    <a href="experience.html">Experience</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="education.html">Education</a> |
-    <a href="contact.html">Contact</a>
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><div class="logo"></div> <span>Amit D. Rana</span></div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div id="menu" class="menu">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      
+      <a class="btn" href="AR-Devops-CV.pdf" download>Download CV</a>
+    </div>
   </div>
-</nav>
+</div>
 
+<div class="container">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="tl">
+      <strong>System Administrator — Siliconithub Pvt. Ltd.</strong>
+      <div class="meta">Ahmedabad • May 2024 – Present</div>
+      <ul>
+        <li>AWS infra: EC2, VPC, RDS, S3, ALB, ASG, ECS, CloudWatch, SQS/SNS, Route 53, CodePipeline, CloudFormation</li>
+        <li>CI/CD with Jenkins & GitLab; automated tests and deployments</li>
+        <li>Dockerized services; microservice deployments</li>
+        <li>Security & monitoring with Sophos + Grafana/Prometheus/Loki stack</li>
+      </ul>
+      <div class="chips">
+        <span class="chip">AWS</span><span class="chip">CI/CD</span><span class="chip">Docker</span><span class="chip">Grafana</span>
+      </div>
+    </div>
+    <div class="tl">
+      <strong>System Administrator — Capermint Technologies Pvt. Ltd.</strong>
+      <div class="meta">Ahmedabad • Oct 2022 – May 2024</div>
+      <ul>
+        <li>Managed AWS (EC2, VPC, IAM, CodeCommit) and automated deployments</li>
+        <li>Docker containerization; Nginx/Apache app hosting</li>
+        <li>Domain/DNS/hosting administration</li>
+      </ul>
+      <div class="chips">
+        <span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Nginx</span>
+      </div>
+    </div>
+    <div class="tl">
+      <strong>System Administrator — Ace Infoway Pvt. Ltd.</strong>
+      <div class="meta">Ahmedabad • Dec 2020 – Sep 2023</div>
+      <ul>
+        <li>Mail server, NAS, backup routines, and helpdesk operations</li>
+        <li>OS-ticket support, inventory, and user account management</li>
+      </ul>
+    </div>
+    <div class="tl">
+      <strong>Retainer Engineer — GCRI (Aforeserve.com Ltd.)</strong>
+      <div class="meta">Ahmedabad • Jun 2020 – Dec 2020</div>
+      <ul>
+        <li>Active Directory, DHCP; remote user support</li>
+        <li>Device setup and network configuration</li>
+      </ul>
+    </div>
+    <div class="tl">
+      <strong>System Engineer — Areco Consulting & Engineering (India) Pvt. Ltd.</strong>
+      <div class="meta">Ahmedabad • Aug 2018 – Jun 2020</div>
+      <ul>
+        <li>IT infrastructure maintenance, backups, troubleshooting</li>
+        <li>Built and launched company website</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<h1>Professional Experience</h1>
-<h2>System Administrator – Siliconithub Pvt. Ltd. (May 2024 – Present)</h2>
-<ul>
-  <li>Designed and managed scalable AWS infrastructure: EC2, VPC, RDS, S3, Load Balancers, Auto Scaling Groups, ECS, CloudWatch, SQS/SNS, Route 53, CodePipeline, CloudFormation.</li>
-  <li>Implemented CI/CD with Jenkins and GitLab; automated testing & deployments.</li>
-  <li>Containerized applications with Docker and managed microservice deployments.</li>
-  <li>Real-time monitoring using Grafana, Prometheus, Loki, Promtail, Blackbox Exporter.</li>
-</ul>
+<div class="container footer">© 2025 Amit D. Rana • <a href="mailto:rana.amit230298@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" rel="noopener">LinkedIn</a></div>
 
-<h2>System Administrator – Capermint Technologies Pvt. Ltd. (Oct 2022 – May 2024)</h2>
-<ul>
-  <li>Provisioned and managed AWS resources (EC2, VPC, IAM, CodeCommit).</li>
-  <li>Automated deployments using Jenkins and GitHub; Docker containerization.</li>
-  <li>Managed deployments on Apache and Nginx.</li>
-</ul>
-
-<h2>Other Roles</h2>
-<p>Additional experience at Ace Infoway Pvt. Ltd., Gujarat Cancer & Research Institute (Aforeserve.com Ltd.), and Areco Consulting & Engineering (India) Pvt. Ltd.</p>
-
-<footer>
-  © 2025 Amit D. Rana — All Rights Reserved
-</footer>
-
-
-<script>
-function toggleMenu() {
-  const links = document.querySelector('nav .links');
-  if (links.style.display === 'block') {
-    links.style.display = 'none';
-  } else {
-    links.style.display = 'block';
-  }
-}
-</script>
-
-</body>
-</html>
+</body></html>

@@ -1,69 +1,63 @@
-<!doctype html>
-<html lang="en">
-<head>
-<link rel="stylesheet" href="style.css"><meta charset="utf-8"><title>Projects - Amit D. Rana</title></head>
-<body>
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amit D. Rana – Portfolio CV</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head><body>
 
 
-<nav>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <div class="links">
-    <a href="index.html">Home</a> |
-    <a href="experience.html">Experience</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="education.html">Education</a> |
-    <a href="contact.html">Contact</a>
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><div class="logo"></div> <span>Amit D. Rana</span></div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div id="menu" class="menu">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      
+      <a class="btn" href="AR-Devops-CV.pdf" download>Download CV</a>
+    </div>
   </div>
-</nav>
+</div>
 
+<div class="container">
+  <h2>Projects</h2>
+  <div class="grid grid-2 cards">
+    <div class="card">
+      <h3>EC2 Auto Start/Stop with Lambda</h3>
+      <p class="small"><strong>Problem:</strong> Instances ran 24/7 increasing cost.<br><strong>Solution:</strong> Lambda + EventBridge schedules to start/stop tagged EC2.<br><strong>Outcome:</strong> ~40% cost savings off-hours.</p>
+      <div class="chips"><span class="chip">Lambda</span><span class="chip">EventBridge</span><span class="chip">EC2</span></div>
+    </div>
+    <div class="card">
+      <h3>Realtime Monitoring Stack</h3>
+      <p class="small"><strong>Problem:</strong> No unified monitoring/alerts.<br><strong>Solution:</strong> Grafana, Prometheus, Loki, Promtail, Blackbox, Node Exporter.<br><strong>Outcome:</strong> Faster detection, lower MTTR.</p>
+      <div class="chips"><span class="chip">Grafana</span><span class="chip">Prometheus</span><span class="chip">Loki</span></div>
+    </div>
+    <div class="card">
+      <h3>Static Site CI/CD to S3</h3>
+      <p class="small"><strong>Problem:</strong> Manual web deployments.<br><strong>Solution:</strong> S3 hosting + CloudFormation infra + CI/CD pipeline.<br><strong>Outcome:</strong> Reliable, one‑click releases.</p>
+      <div class="chips"><span class="chip">S3</span><span class="chip">CI/CD</span><span class="chip">CloudFormation</span></div>
+    </div>
+    <div class="card">
+      <h3>High‑Security Infra Migration</h3>
+      <p class="small"><strong>Problem:</strong> Required secure migration of apps and DBs.<br><strong>Solution:</strong> Hardened firewalls (Sophos/SonicWall), web servers, and databases with staged cutovers.<br><strong>Outcome:</strong> Zero security incidents post‑migration.</p>
+      <div class="chips"><span class="chip">Firewall</span><span class="chip">Hardening</span><span class="chip">Migrations</span></div>
+    </div>
+    <div class="card">
+      <h3>AWS VPC + VPN + RDS Design</h3>
+      <p class="small"><strong>Problem:</strong> Need secure hybrid connectivity.<br><strong>Solution:</strong> Public/private subnets, VPN (OpenVPN), ALB, RDS MySQL/MongoDB.<br><strong>Outcome:</strong> Scalable, secure architecture.</p>
+      <div class="chips"><span class="chip">VPC</span><span class="chip">VPN</span><span class="chip">RDS</span></div>
+    </div>
+    <div class="card">
+      <h3>ECS Fargate + CodePipeline CI/CD</h3>
+      <p class="small"><strong>Problem:</strong> Need autoscaling containers & faster releases.<br><strong>Solution:</strong> ECS Fargate services wired to CodePipeline/CodeBuild.<br><strong>Outcome:</strong> Higher velocity, reduced ops toil.</p>
+      <div class="chips"><span class="chip">ECS Fargate</span><span class="chip">CodePipeline</span><span class="chip">Docker</span></div>
+    </div>
+  </div>
+</div>
 
-<h1>Highlighted Projects</h1>
+<div class="container footer">© 2025 Amit D. Rana • <a href="mailto:rana.amit230298@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" rel="noopener">LinkedIn</a></div>
 
-<h2>1. EC2 Auto Start/Stop with Lambda</h2>
-<p><strong>Problem:</strong> EC2 instances were running 24/7, increasing costs.<br>
-<strong>Solution:</strong> Implemented AWS Lambda with CloudWatch Events to start/stop instances on schedule.<br>
-<strong>Outcome:</strong> Reduced costs by ~40%.</p>
-
-<h2>2. Real-time Monitoring with Grafana, Prometheus & Loki</h2>
-<p><strong>Problem:</strong> Lack of centralized monitoring and alerting.<br>
-<strong>Solution:</strong> Built dashboards using Grafana, Prometheus, Loki, Promtail, Blackbox Exporter, and Node Exporter.<br>
-<strong>Outcome:</strong> Improved observability, reduced downtime.</p>
-
-<h2>3. Automated Static Website Deployment</h2>
-<p><strong>Problem:</strong> Manual deployment process for websites.<br>
-<strong>Solution:</strong> Automated using AWS S3, CloudFormation, and CI/CD workflows.<br>
-<strong>Outcome:</strong> Faster and reliable deployments.</p>
-
-<h2>4. High-Security Infrastructure Migration</h2>
-<p><strong>Problem:</strong> Needed migration with strict security compliance.<br>
-<strong>Solution:</strong> Migrated firewalls, web servers, and databases with hardened security.<br>
-<strong>Outcome:</strong> Zero security breaches, smooth transition.</p>
-
-<h2>5. AWS Architectures with Subnets, VPN, Load Balancers, RDS</h2>
-<p><strong>Problem:</strong> Required scalable, hybrid architecture.<br>
-<strong>Solution:</strong> Designed VPC with private/public subnets, VPN connectivity, load balancers, and RDS (MySQL, MongoDB via OpenVPN).<br>
-<strong>Outcome:</strong> Secure and scalable infrastructure.</p>
-
-<h2>6. ECS Fargate & CI/CD Pipelines</h2>
-<p><strong>Problem:</strong> Need for containerized, auto-scalable deployments.<br>
-<strong>Solution:</strong> Built infra on AWS ECS Fargate integrated with CodePipeline CI/CD.<br>
-<strong>Outcome:</strong> Increased deployment speed, reduced manual intervention.</p>
-
-<footer>
-  © 2025 Amit D. Rana — All Rights Reserved
-</footer>
-
-
-<script>
-function toggleMenu() {
-  const links = document.querySelector('nav .links');
-  if (links.style.display === 'block') {
-    links.style.display = 'none';
-  } else {
-    links.style.display = 'block';
-  }
-}
-</script>
-
-</body>
-</html>
+</body></html>

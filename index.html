@@ -1,59 +1,85 @@
-<!doctype html>
-<html lang="en">
-<head>
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amit D. Rana – Portfolio CV</title>
 <link rel="stylesheet" href="style.css">
-  <meta charset="utf-8">
-  <title>Amit D. Rana – DevOps / System Administrator</title>
-</head>
-<body>
+<script defer src="script.js"></script>
+</head><body>
 
 
-<nav>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <div class="links">
-    <a href="index.html">Home</a> |
-    <a href="experience.html">Experience</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="education.html">Education</a> |
-    <a href="contact.html">Contact</a>
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><div class="logo"></div> <span>Amit D. Rana</span></div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div id="menu" class="menu">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      
+      <a class="btn" href="AR-Devops-CV.pdf" download>Download CV</a>
+    </div>
   </div>
-</nav>
+</div>
 
+<div class="container">
+  <section class="hero card">
+    <div>
+      <div class="kicker">DevOps • System Administration</div>
+      <h1>Amit D. Rana</h1>
+      <p class="lead">System Administrator & DevOps Engineer with 5+ years designing and operating cloud infrastructure on AWS, building CI/CD pipelines, containerizing workloads, and implementing monitoring & security best practices.</p>
+      
+    </div>
+    
+  <div class="actions">
+    <a href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" class="btn-ghost">🔗 LinkedIn</a>
+    <a href="https://github.com/amitrana-ar" target="_blank" class="btn-ghost">🐙 GitHub</a>
+    <a href="mailto:rana.amit230298@gmail.com" class="btn-ghost">✉ Email</a>
+    <a href="tel:+919265014709" class="btn-ghost">📞 Call</a>
+  </div>
 
-<h1>Amit D. Rana</h1>
-<h2>Professional Summary</h2>
-<p>I am a System Administrator & DevOps Engineer with 5+ years of experience managing IT infrastructure, cloud platforms, and enterprise systems. Over the years, I have built a strong foundation in AWS services, automation, containerization, CI/CD pipelines, monitoring solutions, and network security.</p>
+    <div class="avatar card" aria-hidden="true"></div>
+  </section>
+  <section class="section grid grid-2">
+    <div class="card">
+      <h2>Professional Summary</h2>
+      <p class="small">I manage end‑to‑end infrastructure: provisioning servers, configuring networks & firewalls, automating deployments with Jenkins/GitLab and AWS services, and improving observability using Grafana & Prometheus. I focus on reliability, performance, and cost optimization.</p>
+    </div>
+    <div class="card">
+      <h2>Career Objective</h2>
+      <p class="small">Leverage DevOps, cloud, and security expertise to design scalable, resilient systems; drive automation; and mentor teams as I grow toward a DevOps Lead / Cloud Architect role.</p>
+    </div>
+  </section>
+  <section class="section cards grid grid-3">
+    <div class="card">
+      <h2>Core Skills</h2>
+      <div class="chips">
+        <span class="chip">AWS (EC2, VPC, RDS, S3)</span>
+        <span class="chip">CloudFormation</span>
+        <span class="chip">ECS Fargate</span>
+        <span class="chip">Docker</span>
+        <span class="chip">Jenkins • GitLab</span>
+        <span class="chip">Linux • Nginx • Apache</span>
+        <span class="chip">Grafana • Prometheus • Loki</span>
+        <span class="chip">Sophos • SonicWall</span>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Automated EC2 start/stop with Lambda & schedules</li>
+        <li>Realtime monitoring with Grafana + Prometheus stack</li>
+        <li>Static site deployment via S3 + CI/CD</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Download</h2>
+      <p class="small">Grab the complete resume as PDF for offline review and sharing.</p>
+      <a class="btn-primary" href="AR-Devops-CV.pdf" download>Download CV</a>
+    </div>
+  </section>
+</div>
 
-<p>My career has been shaped by handling end-to-end infrastructure responsibilities— from provisioning servers and configuring firewalls to setting up cloud-native deployments with Docker, Jenkins, and AWS ECS. I thrive on problem-solving, reducing downtime, and implementing automation that saves time and boosts productivity.</p>
+<div class="container footer">© 2025 Amit D. Rana • <a href="mailto:rana.amit230298@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" rel="noopener">LinkedIn</a></div>
 
-<h2>Career Objective</h2>
-<p>My objective is to leverage my expertise in DevOps practices, cloud infrastructure, and security to design scalable and resilient systems. I aim to contribute to organizations by:</p>
-<ul>
-  <li>Driving automation in deployment and monitoring</li>
-  <li>Designing secure, cost-efficient AWS architectures</li>
-  <li>Building reliable CI/CD pipelines for faster, error-free releases</li>
-  <li>Supporting teams with technical guidance, troubleshooting, and process optimization</li>
-</ul>
-
-<p>Ultimately, I want to grow into a DevOps Lead / Cloud Architect role, where I can mentor teams, build large-scale cloud solutions, and help businesses achieve high availability, security, and performance in their IT operations.</p>
-
-<p><a href="AR-Devops-CV.pdf" download>Download Full CV (PDF)</a></p>
-
-<footer>
-  © 2025 Amit D. Rana — All Rights Reserved
-</footer>
-
-
-<script>
-function toggleMenu() {
-  const links = document.querySelector('nav .links');
-  if (links.style.display === 'block') {
-    links.style.display = 'none';
-  } else {
-    links.style.display = 'block';
-  }
-}
-</script>
-
-</body>
-</html>
+</body></html>
