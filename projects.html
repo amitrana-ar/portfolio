@@ -1,63 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Amit D. Rana</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Highlight the top project card */
+    .highlight-project {
+      border: 2px solid #38bdf8;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+      background: #16213e;
+    }
+    .highlight-project:hover {
+      transform: scale(1.02);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Amit D. Rana</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="AR-Devops-CV.pdf" download>Download CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Amit Rana – Portfolio CV</title>
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
-</head><body>
+  <section class="section-grid">
 
+    <!-- 🌟 Highlighted New Project -->
+    <div class="card highlight-project">
+      <h2>Blue-Green Deployment on ECS (0% Downtime) with CodePipeline CI/CD</h2>
+      <p>
+        Developed a fully automated <b>Blue-Green Deployment</b> solution for AWS ECS services with <b>zero downtime</b> during production releases.<br><br>
+        When developers push new code to the repository, <b>AWS CodePipeline</b> automatically triggers the build process via <b>CodeBuild</b>.  
+        It builds a Docker image, pushes it to <b>Amazon ECR</b>, and deploys it using an ECS Blue-Green deployment strategy that updates ECS services seamlessly.<br><br>
+        This setup improved deployment reliability, eliminated downtime, and enabled safe, automated rollback mechanisms for production systems.
+      </p>
+    </div>
 
-<div class="nav">
-  <div class="nav-inner container">
-    <div class="brand"><div class="logo"></div> <span>Amit Rana</span></div>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <div id="menu" class="menu">
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Education</a>
-      
-      <a class="btn" href="AR-Devops-CV.pdf" download>Download CV</a>
+    <!-- Existing Projects -->
+    <div class="card">
+      <h2>EC2 Start/Stop Automation using Lambda & EventBridge</h2>
+      <p>Automated EC2 instance lifecycle management with AWS Lambda, reducing costs by scheduling stop/start operations.</p>
     </div>
-  </div>
-</div>
 
-<div class="container">
-  <h2>Projects</h2>
-  <div class="grid grid-2 cards">
     <div class="card">
-      <h3>EC2 Auto Start/Stop with Lambda</h3>
-      <p class="small"><strong>Problem:</strong> Instances ran 24/7 increasing cost.<br><strong>Solution:</strong> Lambda + EventBridge schedules to start/stop tagged EC2.<br><strong>Outcome:</strong> ~40% cost savings off-hours.</p>
-      <div class="chips"><span class="chip">Lambda</span><span class="chip">EventBridge</span><span class="chip">EC2</span></div>
+      <h2>Real-time Monitoring Stack (Grafana, Prometheus, Loki, Promtail, Blackbox)</h2>
+      <p>Built a full monitoring and alerting stack for real-time system visibility and performance optimization.</p>
     </div>
-    <div class="card">
-      <h3>Realtime Monitoring Stack</h3>
-      <p class="small"><strong>Problem:</strong> No unified monitoring/alerts.<br><strong>Solution:</strong> Grafana, Prometheus, Loki, Promtail, Blackbox, Node Exporter.<br><strong>Outcome:</strong> Faster detection, lower MTTR.</p>
-      <div class="chips"><span class="chip">Grafana</span><span class="chip">Prometheus</span><span class="chip">Loki</span></div>
-    </div>
-    <div class="card">
-      <h3>Static Site CI/CD to S3</h3>
-      <p class="small"><strong>Problem:</strong> Manual web deployments.<br><strong>Solution:</strong> S3 hosting + CloudFormation infra + CI/CD pipeline.<br><strong>Outcome:</strong> Reliable, one‑click releases.</p>
-      <div class="chips"><span class="chip">S3</span><span class="chip">CI/CD</span><span class="chip">CloudFormation</span></div>
-    </div>
-    <div class="card">
-      <h3>High‑Security Infra Migration</h3>
-      <p class="small"><strong>Problem:</strong> Required secure migration of apps and DBs.<br><strong>Solution:</strong> Hardened firewalls (Sophos/SonicWall), web servers, and databases with staged cutovers.<br><strong>Outcome:</strong> Zero security incidents post‑migration.</p>
-      <div class="chips"><span class="chip">Firewall</span><span class="chip">Hardening</span><span class="chip">Migrations</span></div>
-    </div>
-    <div class="card">
-      <h3>AWS VPC + VPN + RDS Design</h3>
-      <p class="small"><strong>Problem:</strong> Need secure hybrid connectivity.<br><strong>Solution:</strong> Public/private subnets, VPN (OpenVPN), ALB, RDS MySQL/MongoDB.<br><strong>Outcome:</strong> Scalable, secure architecture.</p>
-      <div class="chips"><span class="chip">VPC</span><span class="chip">VPN</span><span class="chip">RDS</span></div>
-    </div>
-    <div class="card">
-      <h3>ECS Fargate + CodePipeline CI/CD</h3>
-      <p class="small"><strong>Problem:</strong> Need autoscaling containers & faster releases.<br><strong>Solution:</strong> ECS Fargate services wired to CodePipeline/CodeBuild.<br><strong>Outcome:</strong> Higher velocity, reduced ops toil.</p>
-      <div class="chips"><span class="chip">ECS Fargate</span><span class="chip">CodePipeline</span><span class="chip">Docker</span></div>
-    </div>
-  </div>
-</div>
 
-<div class="container footer">© 2025 Amit Rana • <a href="mailto:rana.amit230298@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div class="card">
+      <h2>Automated Static Website Deployment (S3 + CloudFormation + CI/CD)</h2>
+      <p>Implemented continuous integration pipelines deploying static sites automatically via S3 and CloudFormation templates.</p>
+    </div>
 
-</body></html>
+    <div class="card">
+      <h2>High-Security Infrastructure Migrations</h2>
+      <p>Planned and executed secure migrations including web servers, databases, and firewall configurations with minimal downtime.</p>
+    </div>
+
+    <div class="card">
+      <h2>Scalable AWS Architectures</h2>
+      <p>Designed and deployed architectures with private/public subnets, VPN connectivity, Load Balancers, and RDS (MySQL, MongoDB via OpenVPN).</p>
+    </div>
+
+    <div class="card">
+      <h2>CI/CD for ECS Fargate Services</h2>
+      <p>Built automated pipelines to deploy containerized applications on ECS Fargate environments using CodePipeline and CodeBuild.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Amit D. Rana — All Rights Reserved</p>
+  </footer>
+</body>
+</html>
