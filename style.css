@@ -60,6 +60,6 @@ h2{font-size:1.3rem;margin:0 0 8px}
 .cards .card:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(0,0,0,.6)}
 .footer{margin:30px 0;text-align:center;color:#9aa6b5}
 .kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-weight:700;font-size:.75rem}
-.avatar{width:160px;height:160px;border-radius:20px;background:#000 url('./assets/profile.jpg') center/cover no-repeat;border:2px solid #1f2937;box-shadow:0 10px 30px rgba(0,0,0,.5);justify-self:center}
+.avatar{width:160px;height:160px;border-radius:20px;background:#000 url('./assets/profile.jpg') center/cover no-repeat;border:2px solid #1f2937;box-shadow:0 10px 30px rgba(0,0,0,.5);justify-self:bottom}
 .small{font-size:.95rem;color:#cbd5e1}
 hr.sep{border:0;border-top:1px solid var(--border);margin:16px 0}
