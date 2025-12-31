@@ -35,7 +35,12 @@
         <a href="tel:+919265014709" class="btn-ghost">📞 Call</a>
       </div>
     </div>
-    <div class="avatar card" aria-hidden="true"></div>
+    <!--<div class="avatar-aws card" aria-hidden="true"></div>
+    <div class="avatar-azure card" aria-hidden="true"></div>-->
+    <div style="display: flex;">
+      <div class="avatar-aws card" aria-hidden="true"></div>
+      <div class="avatar-azure card" aria-hidden="true"></div>
+    </div>
   </section>
   <section class="section grid grid-2">
     <div class="card">
@@ -51,10 +56,11 @@
     <div class="card">
       <h2>Core Skills</h2>
       <div class="chips">
-        <span class="chip">AWS (EC2, VPC, RDS, S3)</span>
-        <span class="chip">CloudFormation</span>
-        <span class="chip">ECS Fargate</span>
-        <span class="chip">Docker</span>
+        <span class="chip">AWS (IAM • EC2 • VPC • RDS • S3)</span>
+        <span class="chip">Web Hosting • Hostinger • Bluehost</span>
+        <span class="chip">AWS Code Pipeline </span>
+        <span class="chip">CloudFormation • Terraform </span>  
+        <span class="chip">ECS • Docker</span>
         <span class="chip">Ansible</span>
         <span class="chip">Jenkins • GitLab • Github</span>
         <span class="chip">Linux • Nginx • Apache</span>
@@ -65,6 +71,9 @@
     <div class="card">
       <h2>Highlights</h2>
       <ul>
+        <li>Blue-Green Deployment on ECS (0% Downtime)</li>
+        <li>CI/CD pipelines with Jenkins & GitLab CI</li>
+        <li>Configuration management with Ansible</li>
         <li>Automated EC2 start/stop with Lambda & schedules</li>
         <li>Realtime monitoring with Grafana + Prometheus stack</li>
         <li>Static site deployment via S3 + CI/CD</li>
