@@ -7,27 +7,21 @@
 </head><body>
 
 
-<div class="nav">
-  <div class="nav-inner container">
-    <div class="brand"><div class="logo"></div> <span>Amit Rana</span></div>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <div id="menu" class="menu">
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Education</a>
-      
-      <a class="btn" href="AmitRana-Devops-CV.pdf" download>Download CV</a>
-    </div>
-  </div>
-</div>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
 
 <div class="container">
   <section class="hero card">
     <div>
-      <div class="kicker">System Administrator + Devops</div>
       <h1>Amit Rana</h1>
-      <p class="lead">System Administrator & DevOps Engineer with 6+ years designing and operating cloud infrastructure on AWS, building CI/CD pipelines, containerizing workloads, and implementing monitoring & security best practices.</p>
+      <div class="kicker">Devops + System Administrator</div>
+      <p class="lead">DevOps Engineer & System Administrator with 6+ years designing and operating cloud infrastructure on AWS, building CI/CD pipelines, containerizing workloads, and implementing monitoring & security best practices.</p>
       <div class="actions">
         <a href="https://www.linkedin.com/in/amit-rana-544814156" target="_blank" class="btn-ghost">🔗 LinkedIn</a>
         <a href="https://github.com/amitrana-ar" target="_blank" class="btn-ghost">🐙 GitHub</a>
