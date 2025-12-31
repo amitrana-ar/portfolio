@@ -17,5 +17,5 @@
   <!-- Main text -->
   <text x="600" y="300" font-family="Arial, sans-serif" font-size="90" font-style="italic" fill="white" text-anchor="middle" filter="url(#shadow)">"Nothing is impossible"</text>
   <text x="600" y="400" font-family="Arial, sans-serif" font-size="40" fill="white" text-anchor="middle">www.artechworld.info</text>
-  <text x="600" y="460" font-family="Arial, sans-serif" font-size="35" fill="white" text-anchor="middle">DevOps Engineer | System Administrator</text>
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="35" fill="white" text-anchor="middle">System Administrator | DevOps Engineer</text>
 </svg>
